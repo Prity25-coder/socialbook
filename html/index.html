@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SOCALBOOK</title>
+    <title>SOCIAL BOOK</title>
     <link rel="stylesheet" href="/css/style.css" />
     <script
       src="https://kit.fontawesome.com/396e39f5e6.js"
@@ -26,8 +26,69 @@
           <img src="/assets/images/search.png" />
           <input type="text" placeholder="search" />
         </div>
-        <div class="nav-user-icon online">
+        <div class="nav-user-icon online" onclick="settingMenuToggle()">
           <img src="/assets/images/profile-pic.png" />
+        </div>
+      </div>
+
+      <!-- Settings menu -->
+      <div class="settings-menu">
+
+        <div id="dark-btn">
+          <span></span>
+        </div>
+
+
+
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="/assets/images/profile-pic.png" />
+            <div>
+              <p>John Nicholson</p>
+              <a href="#">See your Profile</a>
+            </div>
+          </div>
+          <hr />
+
+          <div class="user-profile">
+            <img src="/assets/images/feedback.png" />
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve the new Design</a>
+            </div>
+          </div>
+          <hr />
+
+          <div class="settings-link">
+            <img src="/assets/images/setting.png" class="settings-icon" />
+            <a href="#"
+              >Settings & Privacy
+              <img src="/assets/images/arrow.png" width="10px" />
+            </a>
+          </div>
+
+          <div class="settings-link">
+            <img src="/assets/images/help.png" class="settings-icon" />
+            <a href="#"
+              >Help & Support
+              <img src="/assets/images/arrow.png" width="10px" />
+            </a>
+          </div>
+
+          <div class="settings-link">
+            <img src="/assets/images/display.png" class="settings-icon" />
+            <a href="#"
+              >Display & Accessibility
+              <img src="/assets/images/arrow.png" width="10px" />
+            </a>
+          </div>
+
+          <div class="settings-link">
+            <img src="/assets/images/logout.png" class="settings-icon" />
+            <a href="#"
+              >Logout <img src="/assets/images/arrow.png" width="10px" />
+            </a>
+          </div>
         </div>
       </div>
     </nav>
@@ -91,6 +152,219 @@
             <p>John Doe</p>
           </div>
         </div>
+
+        <div class="write-post-container">
+          <div class="user-profile">
+            <img src="/assets/images/profile-pic.png" />
+            <div>
+              <p>John Nicholson</p>
+              <small>Public <i class="fa-solid fa-caret-down"></i></small>
+            </div>
+          </div>
+
+          <div class="post-input-container">
+            <textarea
+              rows="3"
+              placeholder="What's on your mind, John?"
+            ></textarea>
+            <div class="add-post-links">
+              <a href="#">
+                <img src="/assets/images/live-video.png" />Live Video</a
+              >
+
+              <a href="#"> <img src="/assets/images/photo.png" />Photo/Video</a>
+
+              <a href="#">
+                <img src="/assets/images/feeling.png" />Feeling/Activity</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- First post -->
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="/assets/images/profile-pic.png" />
+              <div>
+                <p>John Nicholson</p>
+                <span>June 24 2021, 13:40 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          </div>
+
+          <p class="post-text">
+            Subscribe <span> @Prity Tutorials </span>Youtube channel to watch
+            more videos on Website Development and UI Designs.
+            <a href="#">#PrityTutorials</a>
+            <a href="#">#YouTubeChannel</a>
+          </p>
+          <img src="/assets/images/feed-image-1.png" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="/assets/images/like-blue.png" />120</div>
+              <div><img src="/assets/images/comments.png" />45</div>
+              <div><img src="/assets/images/share.png" />20</div>
+            </div>
+
+            <div class="post-profile-icon">
+              <img src="/assets/images/profile-pic.png" /><i
+                class="fa-solid fa-caret-down"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second post -->
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="/assets/images/profile-pic.png" />
+              <div>
+                <p>John Nicholson</p>
+                <span>June 24 2021, 13:40 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          </div>
+
+          <p class="post-text">
+            Like and share this video with friends,tag<span>
+              @Prity Tutorials </span
+            >Facebook page on your post.Ask your doubts in the comments
+            <a href="#">#PrityTutorials</a>
+            <a href="#">#YouTubeChannel</a>
+          </p>
+          <img src="/assets/images/feed-image-2.png" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="/assets/images/like.png" />1550</div>
+              <div><img src="/assets/images/comments.png" />45</div>
+              <div><img src="/assets/images/share.png" />20</div>
+            </div>
+
+            <div class="post-profile-icon">
+              <img src="/assets/images/profile-pic.png" /><i
+                class="fa-solid fa-caret-down"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- third post -->
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="/assets/images/profile-pic.png" />
+              <div>
+                <p>John Nicholson</p>
+                <span>June 24 2021, 13:40 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          </div>
+
+          <p class="post-text">
+            Like and share this video with friends,tag<span>
+              @Prity Tutorials </span
+            >Facebook page on your post.Ask your doubts in the comments
+            <a href="#">#PrityTutorials</a>
+            <a href="#">#YouTubeChannel</a>
+          </p>
+          <img src="/assets/images/feed-image-3.png" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="/assets/images/like.png" />1550</div>
+              <div><img src="/assets/images/comments.png" />45</div>
+              <div><img src="/assets/images/share.png" />20</div>
+            </div>
+
+            <div class="post-profile-icon">
+              <img src="/assets/images/profile-pic.png" /><i
+                class="fa-solid fa-caret-down"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- fourth post -->
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="/assets/images/profile-pic.png" />
+              <div>
+                <p>John Nicholson</p>
+                <span>June 24 2021, 13:40 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          </div>
+
+          <p class="post-text">
+            Like and share this video with friends,tag<span>
+              @Prity Tutorials </span
+            >Facebook page on your post.Ask your doubts in the comments
+            <a href="#">#PrityTutorials</a>
+            <a href="#">#YouTubeChannel</a>
+          </p>
+          <img src="/assets/images/feed-image-4.png" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="/assets/images/like.png" />1550</div>
+              <div><img src="/assets/images/comments.png" />45</div>
+              <div><img src="/assets/images/share.png" />20</div>
+            </div>
+
+            <div class="post-profile-icon">
+              <img src="/assets/images/profile-pic.png" /><i
+                class="fa-solid fa-caret-down"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- fiveth post -->
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="/assets/images/profile-pic.png" />
+              <div>
+                <p>John Nicholson</p>
+                <span>June 24 2021, 13:40 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          </div>
+
+          <p class="post-text">
+            Like and share this video with friends,tag<span>
+              @Prity Tutorials </span
+            >Facebook page on your post.Ask your doubts in the comments
+            <a href="#">#PrityTutorials</a>
+            <a href="#">#YouTubeChannel</a>
+          </p>
+          <img src="/assets/images/feed-image-5.png" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="/assets/images/like.png" />1550</div>
+              <div><img src="/assets/images/comments.png" />45</div>
+              <div><img src="/assets/images/share.png" />20</div>
+            </div>
+
+            <div class="post-profile-icon">
+              <img src="/assets/images/profile-pic.png" /><i
+                class="fa-solid fa-caret-down"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="load-more-btn">Load More</button>
       </div>
 
       <!------------------- right-sidebar ------------------------------>
@@ -160,5 +434,12 @@
         </div>
       </div>
     </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <p>Copyright 2023 - Prity Tutorials YouTube Channel</p>
+    </div>
+
+    <script src="/js/app.js"></script>
   </body>
 </html>
